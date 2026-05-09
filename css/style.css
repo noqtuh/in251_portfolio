@@ -1,0 +1,50 @@
+:root {
+  /* Background */
+  --color-bg: #F3EEE6;
+
+  /* Folder */
+  --color-folder: #D8A85D;
+  --color-folder-dark: #B98235;
+  --color-folder-light: #E7C37A;
+
+  /* Paper / Content */
+  --color-paper: #FFFDF7;
+  --color-paper-secondary: #F7F1E8;
+
+  /* Text */
+  --color-text: #2B2620;
+  --color-text-muted: #7A6F63;
+
+  /* Tabs */
+  --color-tab-active: #FFFDF7;
+  --color-tab-inactive: #D1B07A;
+  --color-tab-hover: #E8C98A;
+
+  /* Accent */
+  --color-accent: #3F6F5E;
+  --color-accent-hover: #315849;
+
+  /* Details */
+  --color-border: #CBBBA3;
+  --color-shadow: rgba(43, 38, 32, 0.16);
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+::-moz-selection {
+  background: #a42ec4;
+  text-shadow: none;
+}
+
+::selection {
+  background: #a42ec4;
+  text-shadow: none;
+}
