@@ -8,17 +8,17 @@
   --color-folder-light: #E7C37A;
 
   /* Paper / Content */
-  --color-paper: #FFFDF7;
-  --color-paper-secondary: #F7F1E8;
+  --color-paper: #f8e7c4;
+  --color-paper-secondary: #efd29a;
 
   /* Text */
   --color-text: #2B2620;
   --color-text-muted: #7A6F63;
 
   /* Tabs */
-  --color-tab-active: #FFFDF7;
-  --color-tab-inactive: #D1B07A;
-  --color-tab-hover: #E8C98A;
+  --color-tab-active: #f8e7c4;
+  --color-tab-inactive: #d8b879;
+  --color-tab-hover: #e8c98a;
 
   /* Accent */
   --color-accent: #3F6F5E;
@@ -33,10 +33,12 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
   background: var(--color-bg);
+
 }
 
 ::-moz-selection {
@@ -47,4 +49,93 @@ body {
 ::selection {
   background: #a42ec4;
   text-shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-folder {
+  padding: 2rem;
+  width: 60%;
+  height: 80vh;
+  background: var(--color-folder);
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.folder-title-frame {
+  width: 60%;
+  padding: 0 2rem 0 2rem ;
+}
+
+.folder-title {
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: none;
+  background: var(--color-folder);
+  padding: 0.35rem;
+  width: fit-content;
+  min-width: 175px;
+  text-align: center;
+}
+
+.folder-frame {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.folder-tabs {
+  flex-shrink: 0;
+  padding: 0 1rem 0 1rem ;
+  display: flex;
+  gap: 1rem;
+}
+
+.folder-tabs button {
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: none;
+  background: var(--color-tab-inactive);
+  padding: 0.35rem;
+  min-width: 85px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.folder-tabs button:hover {
+  background: var(--color-tab-hover);
+}
+
+.folder-content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.paper-page {
+  background: var(--color-paper);
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.paper-page[hidden] {
+  display: none;
+}
+
+.folder-tabs button.active {
+  background: var(--color-tab-active);
+  color: var(--color-text);
 }

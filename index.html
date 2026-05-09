@@ -5,14 +5,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Files of Noé Formanek</title>
-  <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
-  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/navigation.js" defer></script>
 </head>
 
 <body>
-  Hallo ich heisse Noé Formanek
+<div class="folder-title-frame">
+  <div class="folder-title">Files of Noé Formanek</div>
+</div>
+<section class="portfolio-folder">
+  <div class="folder-frame">
+    <nav class="folder-tabs">
+      <button type="button" class="active" aria-selected="true" data-tab="about">
+        About
+      </button>
+      <button type="button" aria-selected="false" data-tab="experience">
+        Experience
+      </button>
+      <button type="button" aria-selected="false" data-tab="skills">
+        Skills
+      </button>
+      <button type="button" aria-selected="false" data-tab="projects">
+        Projects
+      </button>
+      <button type="button" aria-selected="false" data-tab="contact">
+        Contact
+      </button>
+      <button type="button" aria-selected="false" data-tab="top-secret">
+        Top Secret
+      </button>
+    </nav>
+
+    <div class="folder-content">
+      <article class="paper-page active" data-panel="about">
+        About
+      </article>
+
+      <article class="paper-page" data-panel="experience" hidden>
+        Experience
+      </article>
+
+      <article class="paper-page" data-panel="skills" hidden>
+        Skills
+      </article>
+
+      <article class="paper-page" data-panel="projects" hidden>
+        Projects
+      </article>
+
+      <article class="paper-page" data-panel="contact" hidden>
+        Contact
+      </article>
+
+      <article class="paper-page" data-panel="top-secret" hidden>
+        Top Secret
+      </article>
+    </div>
+  </div>
+</section>
 </body>
 
 </html>
