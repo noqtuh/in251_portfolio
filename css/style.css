@@ -83,7 +83,7 @@ body {
   border-radius: 0.5rem 0.5rem 0 0;
   border: none;
   background: var(--color-folder);
-  padding: 0.35rem;
+  padding: 0.35rem 0.7rem;
   width: fit-content;
   min-width: 175px;
   text-align: center;
@@ -129,6 +129,7 @@ body {
   overflow-y: auto;
   box-sizing: border-box;
   border-radius: 10px;
+  padding: 0.25rem 1.5rem;
 }
 
 .paper-page[hidden] {
@@ -138,4 +139,17 @@ body {
 .folder-tabs button.active {
   background: var(--color-tab-active);
   color: var(--color-text);
+}
+
+.page-title {
+  color: var(--color-accent);
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: var(--color-text);
+}
+
+.page-header {
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 2.4rem;
 }
