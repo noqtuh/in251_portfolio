@@ -23,6 +23,7 @@
   /* Accent */
   --color-accent: #3F6F5E;
   --color-accent-hover: #315849;
+  --color-accent2: #ea4545;
 
   /* Details */
   --color-border: #CBBBA3;
@@ -87,6 +88,7 @@ body {
   width: fit-content;
   min-width: 175px;
   text-align: center;
+  font-weight: bold;
 }
 
 .folder-frame {
@@ -139,13 +141,13 @@ body {
 .folder-tabs button.active {
   background: var(--color-tab-active);
   color: var(--color-text);
+  font-weight: bold;
 }
 
 .page-title {
-  color: var(--color-accent);
+  color: var(--color-accent2);
   font-weight: bold;
   font-size: 1.2rem;
-  background: var(--color-text);
 }
 
 .page-header {
