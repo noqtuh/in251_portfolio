@@ -43,12 +43,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #a42ec4;
+  background: #fff402;
   text-shadow: none;
 }
 
 ::selection {
-  background: #a42ec4;
+  background: #fff402;
   text-shadow: none;
 }
 
@@ -73,6 +73,7 @@ body {
   background: var(--color-folder);
   border-radius: 1rem;
   box-sizing: border-box;
+  box-shadow: 7px 9px 0 rgba(0, 0, 0, 0.12);
 }
 
 .folder-title-frame {
@@ -84,11 +85,14 @@ body {
   border-radius: 0.5rem 0.5rem 0 0;
   border: none;
   background: var(--color-folder);
-  padding: 0.35rem 0.7rem;
+  padding: 0.35rem 1.4rem;
   width: fit-content;
   min-width: 175px;
   text-align: center;
   font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .folder-frame {
@@ -109,9 +113,18 @@ body {
   border-radius: 0.5rem 0.5rem 0 0;
   border: none;
   background: var(--color-tab-inactive);
-  padding: 0.35rem;
+  padding: 0.35rem 0.95rem;
   min-width: 85px;
+  font-size: 1rem;
   font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.folder-tabs button.active {
+  background: var(--color-tab-active);
+  color: var(--color-text);
+  font-weight: bold;
 }
 
 .folder-tabs button:hover {
@@ -131,27 +144,97 @@ body {
   overflow-y: auto;
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 0.25rem 1.5rem;
+  padding: 2rem 3rem;
+  box-shadow: 7px 9px 0 rgba(0, 0, 0, 0.12);
 }
 
 .paper-page[hidden] {
   display: none;
 }
 
-.folder-tabs button.active {
-  background: var(--color-tab-active);
-  color: var(--color-text);
-  font-weight: bold;
+.page-title,
+.page-header {
+  display: block;
 }
 
 .page-title {
-  color: var(--color-accent2);
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
 }
 
 .page-header {
-  color: var(--color-text);
-  font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 7.5rem;
+  font-weight: 700;
+  font-family: "Georgia", Serif, monospace;
+  letter-spacing: -0.05em;
+  line-height: 1.125;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
+}
+
+.page-text {
+  max-width: 100%;
+  line-height: 1.6;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  padding: 1.25rem;
+
+}
+
+.note-wall {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  align-items: stretch;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+.postit{
+  position: relative;
+  min-height: 390px;
+  padding: 1rem;
+  box-shadow: 7px 9px 0 rgba(0, 0, 0, 0.12);
+  background: var(--color-paper-secondary);
+}
+
+/*Kleber vom Postit*/
+.postit::before {
+  content: "";
+  position: absolute;
+  top: -1.0rem;
+  left: 50%;
+  width: 118px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.36);
+  transform: translateX(-50%) rotate(-2deg);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.postit:nth-child(1) {
+  transform: rotate(-2.2deg);
+}
+
+.postit:nth-child(2) {
+  transform: rotate(1.5deg);
+}
+
+.postit:nth-child(3) {
+  transform: rotate(-1.75deg);
+}
+
+.postit-label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
