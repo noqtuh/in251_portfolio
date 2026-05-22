@@ -9,9 +9,21 @@
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/navigation.js" defer></script>
+    <script src="js/mobileCheck.js" defer></script>
 </head>
 
 <body>
+<div id="mobileHint" class="mobile-hint">
+
+    <div class="popup">
+        <span class="popup-title">Warnung</span>
+        <p>Diese Website funktioniert auch auf mobilen Geräten. Für die vollständige Experience und
+            die beste Darstellung empfiehlt sich jedoch die Nutzung auf einem Desktop.</p>
+        <button id="closeHint">Verstanden</button>
+    </div>
+</div>
+
+
 <div class="folder-title-frame" >
   <div class="folder-title">Dokumente von Noé Formanek</div>
 </div>
@@ -103,17 +115,14 @@
         <span class="page-header">...</span>
       </article>
 
-      <article class="paper-page" data-panel="contact" hidden>
+      <article class="paper-page paper-page-grow" data-panel="contact" hidden>
         <span class="page-title">Akte 05 / Kontakt</span>
           <div class="page-text">
-              Hier findest du meine Kontaktinformationen. Schreib mir gerne, wenn du Fragen hast,
-              Feedback geben möchtest oder dich über ein Projekt austauschen willst.
+              Eine kleine Sammlung von Kontaktmöglichkeiten und Plattformen mit Einblicken in
+              Projekte, Code und weitere Arbeiten aus meiner Entwicklung.
           </div>
 
           <div class="card-wall">
-
-
-
               <div class="card">
                   <svg class="paperclip" viewBox="0 0 120 40" aria-hidden="true">
                       <path
@@ -133,7 +142,27 @@
                       />
                   </svg>
                   <div class="card-inner">
-                      <span class="postit-label">Visitenkarte</span>
+                      <span class="card-label">Visitenkarte</span>
+                      <div class="card-content">
+                          <div class="card-header">
+                              <img src="assets/logos/Person.svg" alt="Person" class="card-logo">
+
+                              <div class="card-heading">
+                                  <span class="card-title">Noé Formanek</span>
+                                  <span class="card-subtitle">Kontakt Direkt Persönlich</span>
+                              </div>
+                          </div>
+
+                          <div class="card-body">
+                              <p class="card-description">
+                                  Mein direkter Kontakt für offene Fragen, Feedback oder auch sehr gerne einem kurzen Austausch.
+                              </p>
+
+                              <a href="mailto:noqtuh@gmail.com" class="card-link">
+                                  noqtuh@gmail.com
+                              </a>
+                          </div>
+                      </div>
                   </div>
               </div>
 
@@ -156,7 +185,29 @@
                       />
                   </svg>
                   <div class="card-inner">
-                      <span class="postit-label">Github</span>
+                      <span class="card-label">Github</span>
+                      <div class="card-content">
+                          <div class="card-header">
+                              <img src="assets/logos/GitHub.svg" alt="Github Logo" class="card-logo">
+
+                              <div class="card-heading">
+                                  <span class="card-title">@noqtuh</span>
+                                  <span class="card-subtitle">Code Repos Fortschritt</span>
+                              </div>
+                          </div>
+
+                          <div class="card-body">
+                              <ul class="card-list">
+                                  <li>Kleine Webprojekte</li>
+                                  <li>Experimente & Tools</li>
+                                  <li>Code aus eigenen Projekten</li>
+                              </ul>
+
+                              <a href="https://github.com/noqtuh" target="_blank" class="card-link">
+                                  github.com/noqtuh
+                              </a>
+                          </div>
+                      </div>
                   </div>
               </div>
 
@@ -179,7 +230,29 @@
                       />
                   </svg>
                   <div class="card-inner">
-                      <span class="postit-label">LinkedIn</span>
+                      <span class="card-label">LinkedIn</span>
+                      <div class="card-content">
+                          <div class="card-header">
+                              <img src="assets/logos/LinkedInDark.svg" alt="LinkedIn Logo" class="card-logo">
+
+                              <div class="card-heading">
+                                  <span class="card-title">/in/noeformanek</span>
+                                  <span class="card-subtitle">Vernetzten Teilen Austauschen</span>
+                              </div>
+                          </div>
+
+                          <div class="card-body">
+                              <ul class="card-list">
+                                  <li>Berufliches Profil</li>
+                                  <li>Austausch & Vernetzung</li>
+                                  <li>Updates zu Projekten</li>
+                              </ul>
+
+                              <a href="https://linkedin.com/in/noeformanek" target="_blank" class="card-link">
+                                  linkedin.com/in/noeformanek
+                              </a>
+                          </div>
+                      </div>
                   </div>
               </div>
 
@@ -202,7 +275,29 @@
                       />
                   </svg>
                   <div class="card-inner">
-                      <span class="postit-label">Portfolio</span>
+                      <span class="card-label">Portfolio</span>
+                      <div class="card-content">
+                          <div class="card-header">
+                              <img src="assets/logos/Webbrowser.svg" alt="Webbrowser Logo" class="card-logo">
+
+                              <div class="card-heading">
+                                  <span class="card-title">noeformanek.ch</span>
+                                  <span class="card-subtitle">Projekte Einblick Infos</span>
+                              </div>
+                          </div>
+
+                          <div class="card-body">
+                              <ul class="card-list">
+                                  <li>Ausgewählte Projekte</li>
+                                  <li>Design & Entwicklung</li>
+                                  <li>Mehr über mich</li>
+                              </ul>
+
+                              <a href="https://noeformanek.ch" target="_blank" class="card-link">
+                                  noeformanek.ch
+                              </a>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>

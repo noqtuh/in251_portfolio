@@ -42,7 +42,7 @@
 .postit-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
 }
 
@@ -71,7 +71,7 @@
     transform: rotate(-1.75deg);
 }
 
-.postit-label {
+.postit-label, .card-label {
     display: block;
     margin-bottom: 0.75rem;
     font-size: 1.25rem;

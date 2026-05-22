@@ -59,6 +59,71 @@ body {
   box-sizing: border-box;
 }
 
+.mobile-hint {
+  display: none;
+  position: absolute;
+  z-index:99999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.24);
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mobile-hint .popup {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+
+  width: min(90vw, 800px);
+  height: fit-content;
+  padding: 1.25rem;
+  background: var(--color-paper);
+  color: var(--color-text);
+  box-shadow: 7px 9px 0 rgba(0, 0, 0, 0.12);
+
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+}
+
+.mobile-hint.is-visible {
+  display: flex;
+}
+
+.mobile-hint .popup .popup-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.mobile-hint button {
+  border: none;
+  background: var(--color-paper-secondary);
+  color: var(--color-text);
+  padding: 0.65rem 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.14);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.mobile-hint button:hover {
+  background: var(--color-folder-light);
+  transform: translateY(-2px);
+  box-shadow: 6px 7px 0 rgba(0, 0, 0, 0.16);
+}
+
+.mobile-hint button:active {
+  transform: translateY(1px);
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
 body {
   min-height: 100vh;
   min-width: 100vw;
@@ -149,6 +214,11 @@ body {
   border-radius: 10px;
   padding: 1.5rem 3rem;
   box-shadow: 7px 9px 0 rgba(0, 0, 0, 0.12);
+}
+
+.paper-page-grow {
+  display: flex;
+  flex-direction: column;
 }
 
 .paper-page[hidden] {
