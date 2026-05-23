@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b4b0823-066a-4af5-b326-ba3c49068ced" name="Changes" comment="feat: small changes on the layout, started working on the page content and layout.">
-      <change afterPath="$PROJECT_DIR$/assets/logos/GitHub.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/logos/LinkedIn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/logos/LinkedInDark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/logos/Person.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/logos/Webbrowser.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/mobileCheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/colors.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/cardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cardStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/postitStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/postitStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mobileCheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mobileCheck.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>

@@ -182,3 +182,33 @@
 .card-link:hover {
     opacity: 0.7;
 }
+
+/* Full HD / MacBook / kleinere Desktop Screens */
+@media (max-width: 1920px) {
+
+}
+
+/* MacBook / kleinere Laptops */
+@media (max-width: 1600px) {
+
+}
+
+/* Laptops / kleinere Screens */
+@media (max-width: 1440px) {
+
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+}
+
+/* Handys */
+@media (max-width: 768px) {
+
+}
+
+/* Kleine Handys */
+@media (max-width: 480px) {
+
+}

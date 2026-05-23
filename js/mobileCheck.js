@@ -2,7 +2,7 @@ const mobileHint = document.getElementById("mobileHint");
 const closeHint = document.getElementById("closeHint");
 const mobileAccepted = localStorage.getItem("mobileAcknowledge");
 
-if (screen.width <= 3000) {
+if (screen.width <= 1000) {
     console.log("screen to small")
     if (mobileAccepted !== "true" ) {
         mobileHint.classList.add("is-visible");

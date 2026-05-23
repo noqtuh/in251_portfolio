@@ -1,37 +1,6 @@
 @import "postitStyle.css";
 @import "cardStyle.css";
-
-:root {
-  /* Background */
-  --color-bg: #F3EEE6;
-
-  /* Folder */
-  --color-folder: #D8A85D;
-  --color-folder-dark: #B98235;
-  --color-folder-light: #E7C37A;
-
-  /* Papier / Content */
-  --color-paper: #f8e7c4;
-  --color-paper-secondary: #efd29a;
-
-  /* Text */
-  --color-text: #2B2620;
-  --color-text-muted: #7A6F63;
-
-  /* Tabs */
-  --color-tab-active: #f8e7c4;
-  --color-tab-inactive: #d8b879;
-  --color-tab-hover: #e8c98a;
-
-  /* Akzent */
-  --color-accent: #3F6F5E;
-  --color-accent-hover: #315849;
-  --color-accent2: #ea4545;
-
-  /* Details */
-  --color-border: #CBBBA3;
-  --color-shadow: rgba(43, 38, 32, 0.16);
-}
+@import "colors.css";
 
 html {
   color: #222;
@@ -70,7 +39,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 .mobile-hint .popup {
   position: relative;
@@ -158,7 +126,7 @@ body {
   min-width: 175px;
   text-align: center;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -183,7 +151,7 @@ body {
   background: var(--color-tab-inactive);
   padding: 0.35rem 0.95rem;
   min-width: 85px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -263,81 +231,260 @@ body {
   padding: 1.25rem;
 }
 
-/* Full HD / 1920px */
+/* Full HD / MacBook / kleinere Desktop Screens */
 @media (max-width: 1920px) {
+  .folder-title {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 1.4rem;
+    width: fit-content;
+    min-width: 175px;
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+  }
+
+  .folder-tabs button {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 0.95rem;
+    min-width: 85px;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+  }
+
   .page-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0.08em;
   }
 
   .page-header {
-    font-size: 6.5rem;
+    font-size: 5.6rem;
+    line-height: 1;
+    letter-spacing: -0.055em;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+  }
+
+  .page-text {
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    line-height: 1.55;
+    padding: 1rem;
+  }
+}
+
+/* MacBook / kleinere Laptops */
+@media (max-width: 1600px) {
+  .folder-title {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 1.4rem;
+    width: fit-content;
+    min-width: 175px;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .folder-tabs button {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 0.95rem;
+    min-width: 85px;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+  }
+
+  .page-title {
+    font-size: 0.95rem;
+    letter-spacing: 0.075em;
+  }
+
+  .page-header {
+    font-size: 5rem;
     line-height: 1;
   }
 
   .page-subtitle {
-     font-size: 1.1rem;
-     letter-spacing: 0.08em;
-   }
+    font-size: 0.95rem;
+    letter-spacing: 0.075em;
+  }
 
   .page-text {
-    font-size: 1.1rem;
-    letter-spacing: 0.08em;
+    font-size: 0.85rem;
+    letter-spacing: 0.055em;
+    line-height: 1.5;
+    padding: 0.95rem;
   }
 }
 
 /* Laptops / kleinere Screens */
 @media (max-width: 1440px) {
+  .folder-title {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 1.4rem;
+    width: fit-content;
+    min-width: 175px;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+  }
+
+  .folder-tabs button {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 0.95rem;
+    min-width: 85px;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+
+  .page-title {
+    font-size: 0.9rem;
+    letter-spacing: 0.07em;
+  }
+
+  .page-header {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .page-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.07em;
+  }
+
   .page-text {
-    font-size: 1rem;
-    letter-spacing: 0.06em;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    padding: 0.9rem;
   }
 }
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .page-text {
-    font-size: 0.9rem;
+  .folder-title {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 1.4rem;
+    width: fit-content;
+    min-width: 175px;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+  }
+
+  .folder-tabs button {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 0.95rem;
+    min-width: 85px;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+
+  .page-title {
+    font-size: 0.8rem;
     letter-spacing: 0.06em;
+  }
+
+  .page-header {
+    font-size: 3.4rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .page-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+  }
+
+  .page-text {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    line-height: 1.45;
+    padding: 0.8rem;
   }
 }
 
 /* Handys */
 @media (max-width: 768px) {
-  .page-text {
+  .folder-title {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 1.4rem;
+    width: fit-content;
+    min-width: 175px;
     font-size: 0.8rem;
-    letter-spacing: 0.04em;
-    padding: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .folder-tabs button {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 0.95rem;
+    min-width: 85px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+
+  .page-title {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+
+  .page-header {
+    font-size: 2.6rem;
+    line-height: 1;
+    letter-spacing: -0.035em;
+  }
+
+  .page-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+
+  .page-text {
+    font-size: 0.7rem;
+    letter-spacing: 0.035em;
+    line-height: 1.4;
+    padding: 0.75rem;
   }
 }
 
 /* Kleine Handys */
 @media (max-width: 480px) {
-  .page-text {
+  .folder-title {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 1.4rem;
+    width: fit-content;
+    min-width: 175px;
     font-size: 0.7rem;
-    letter-spacing: 0.03em;
-    padding: 0.75rem;
+    letter-spacing: 0.1em;
   }
-}
 
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-}
+  .folder-tabs button {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.35rem 0.95rem;
+    min-width: 85px;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+  }
 
-.skill-grid button {
-  padding: 0.4rem 0.6rem;
-  font-size: 1rem;
-  cursor: default;
-  font-family: "Courier New", Courier, monospace;
-  background: var(--color-folder-light);
-  border: none;
-}
+  .page-title {
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+  }
 
-.skill-grid button:hover {
-  font-weight: bold;
-  cursor: default;
+  .page-header {
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .page-subtitle {
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+  }
+
+  .page-text {
+    font-size: 0.6rem;
+    letter-spacing: 0.025em;
+    line-height: 1.35;
+    padding: 0.6rem;
+  }
 }
 
 .divider {
