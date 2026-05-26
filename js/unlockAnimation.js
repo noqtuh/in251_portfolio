@@ -10,4 +10,4 @@ function unlockAnimation() {
 
 setTimeout(() => {
     unlockAnimation();
-}, 1000);
+}, 500);
