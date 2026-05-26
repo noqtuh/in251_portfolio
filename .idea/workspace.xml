@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b4b0823-066a-4af5-b326-ba3c49068ced" name="Changes" comment="feat: small changes on the layout, started working on the page content and layout.">
-      <change afterPath="$PROJECT_DIR$/assets/stamps/api.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/css.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/database.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/docker.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/figma.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/git.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/grails.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/html.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/java.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/javascript.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/jetbrains.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/nodejs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/postman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/tailwind.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/stamps/vuejs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/stampMasks.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/stampStyles.css" afterDir="false" />
+    <list default="true" id="7b4b0823-066a-4af5-b326-ba3c49068ced" name="Changes" comment="feat: added first step to responsive for postits and regular titles. Added infos to every tab.">
+      <change afterPath="$PROJECT_DIR$/js/unlockAnimation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/postitStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/postitStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stampStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stampStyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/topSecretNoe2026.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,12 +37,12 @@
     &quot;assignee&quot;: &quot;noqtuh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/noqtuh/in251_portfolio.git&quot;,
-    &quot;accountId&quot;: &quot;df1acf2a-ec86-4b11-b695-549d0f70da18&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:noqtuh/in251_portfolio.git",
+    "accountId": "55bb41d0-f708-4bf4-a994-7279a8d4bcce"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -160,7 +144,6 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Noé Formanek\WebstormProjects\in251_portfolio\assets\stamps" />
       <recent name="$PROJECT_DIR$/assets/logos" />
       <recent name="C:\Users\Noé Formanek\WebstormProjects\in251_portfolio\assets\images" />
     </key>
@@ -168,7 +151,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
       </set>
     </attachedChunks>
   </component>
@@ -187,9 +170,6 @@
       <workItem from="1779269090581" duration="11547000" />
       <workItem from="1779344977429" duration="726000" />
       <workItem from="1779392369036" duration="4250000" />
-      <workItem from="1779649424950" duration="281000" />
-      <workItem from="1779704546397" duration="1290000" />
-      <workItem from="1779780670537" duration="9329000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: Switched language of the CV to german.">
       <option name="closed" value="true" />
