@@ -1,0 +1,179 @@
+@import "stampMasks.css";
+
+.stamp-page {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 3rem;
+    align-items: stretch;
+    margin-top: 0.5rem;
+    width: calc(100%);
+    flex: 1;
+    min-height: 0;
+    margin-bottom: 1rem;
+}
+
+.stamp-section {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0.25rem 0.5rem;
+    border: 2px dotted var(--color-text);
+
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+}
+
+.stamp-label {
+    display: block;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+.stamp-text {
+    max-width: 100%;
+    line-height: 1.6;
+    font-size: 1.25rem;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+    min-height: 50px;
+}
+
+.stamp-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.stamp-item {
+    aspect-ratio: 1 / 1;
+    border: 2px solid currentColor;
+    background: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+/* 1. grosse Spalte / Frontend */
+.stamp-section:nth-child(1) .stamp-item:nth-child(1) {
+    color: #42b883;
+    border-radius: 10%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(1) .stamp-item:nth-child(2) {
+    color: #b89b24;
+    border-radius: 10%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(1) .stamp-item:nth-child(3) {
+    color: #0ea5b7;
+    border-radius: 50%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(1) .stamp-item:nth-child(4) {
+    color: #d65a2e;
+    border-radius: 50%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(1) .stamp-item:nth-child(5) {
+    color: #2f73b7;
+    border-radius: 50%;
+    border: 4px solid currentColor;
+}
+
+/* 2. grosse Spalte / Backend */
+.stamp-section:nth-child(2) .stamp-item:nth-child(1) {
+    color: #b35f4b;
+    border-radius: 40%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(2) .stamp-item:nth-child(2) {
+    color: #7c5fa8;
+    border-radius: 50%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(2) .stamp-item:nth-child(3) {
+    color: #6fa36f;
+    border-radius: 50%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(2) .stamp-item:nth-child(4) {
+    color: #6f8f78;
+    border-radius: 25%;
+    border: 10px solid currentColor;
+}
+
+.stamp-section:nth-child(2) .stamp-item:nth-child(5) {
+    color: #6f8f78;
+    border-radius: 25%;
+    border: 6px solid currentColor;
+}
+
+/* 3. grosse Spalte / Tools */
+.stamp-section:nth-child(3) .stamp-item:nth-child(1) {
+    color: #6f6a62;
+    border-radius: 50%;
+    border: 6px solid currentColor;
+}
+
+.stamp-section:nth-child(3) .stamp-item:nth-child(2) {
+    color: #d99a45;
+    border-radius: 50%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(3) .stamp-item:nth-child(3) {
+    color: #8f6bb0;
+    border-radius: 10%;
+    border: 8px solid currentColor;
+}
+
+.stamp-section:nth-child(3) .stamp-item:nth-child(4) {
+    color: #ef6c37;
+    border-radius: 50%;
+    border: 4px solid currentColor;
+}
+
+.stamp-section:nth-child(3) .stamp-item:nth-child(5) {
+    color: #2496ed;
+    border-radius: 50%;
+    border: 4px solid currentColor;
+}
+
+.stamp-icon {
+    width: 90%;
+    height: 90%;
+    background: currentColor;
+    display: block;
+}
+
+/* Full HD / MacBook / kleinere Desktop Screens */
+@media (max-width: 1920px) {
+    .stamp-label {
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+    }
+
+    .stamp-text {
+        font-size: 0.9rem;
+        letter-spacing: 0.06em;
+        line-height: 1.55;
+    }
+}

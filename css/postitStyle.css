@@ -5,6 +5,8 @@
     align-items: stretch;
     margin-top: 0.5rem;
     max-width: 100%;
+    /*flex: 1;*/
+    /*min-height: 0;*/
 }
 
 .postit {

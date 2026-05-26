@@ -1,0 +1,77 @@
+/*Icons Frontend*/
+.vue-icon {
+    mask: url("../assets/stamps/vuejs.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/vuejs.svg") center / contain no-repeat;
+}
+
+.js-icon {
+    mask: url("../assets/stamps/javascript.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/javascript.svg") center / contain no-repeat;
+}
+
+.tailwind-icon {
+    mask: url("../assets/stamps/tailwind.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/tailwind.svg") center / contain no-repeat;
+}
+
+.html-icon {
+    mask: url("../assets/stamps/html.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/html.svg") center / contain no-repeat;
+}
+
+.css-icon {
+    mask: url("../assets/stamps/css.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/css.svg") center / contain no-repeat;
+}
+
+/*Icons Backend*/
+.java-icon {
+    mask: url("../assets/stamps/java.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/java.svg") center / contain no-repeat;
+}
+
+.grails-icon {
+    mask: url("../assets/stamps/grails.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/grails.svg") center / contain no-repeat;
+}
+
+.nodejs-icon {
+    mask: url("../assets/stamps/nodejs.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/nodejs.svg") center / contain no-repeat;
+}
+
+.api-icon {
+    mask: url("../assets/stamps/api.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/api.svg") center / contain no-repeat;
+}
+
+.db-icon {
+    mask: url("../assets/stamps/database.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/database.svg") center / contain no-repeat;
+}
+
+/*Icons Tools*/
+.git-icon {
+    mask: url("../assets/stamps/git.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/git.svg") center / contain no-repeat;
+}
+
+.figma-icon {
+    mask: url("../assets/stamps/figma.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/figma.svg") center / contain no-repeat;
+}
+
+.jetbrains-icon {
+    mask: url("../assets/stamps/jetbrains.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/jetbrains.svg") center / contain no-repeat;
+}
+
+.postman-icon {
+    mask: url("../assets/stamps/postman.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/postman.svg") center / contain no-repeat;
+}
+
+.docker-icon {
+    mask: url("../assets/stamps/docker.svg") center / contain no-repeat;
+    -webkit-mask: url("../assets/stamps/docker.svg") center / contain no-repeat;
+}
