@@ -1,13 +1,22 @@
+const coverPaper = document.getElementById("folderCover");
+
 function unlockAnimation() {
-    const coverPaper = document.getElementById("folderCover");
 
-    coverPaper.classList.add("folder-cover-open");
+        coverPaper.classList.add("folder-cover-open");
 
-    setTimeout(() => {
-        coverPaper.style.display = "none";
-    }, 2700);
+        setTimeout(() => {
+            coverPaper.style.display = "none";
+        }, 2700);
+
+        sessionStorage.setItem("animationPlayed", "true")
 }
 
-setTimeout(() => {
-    unlockAnimation();
-}, 500);
+const animationPlayed = sessionStorage.getItem("animationPlayed")
+
+if(animationPlayed !== "true") {
+    setTimeout(() => {
+        unlockAnimation();
+    }, 500);
+} else {
+    coverPaper.style.display = "none";
+}
