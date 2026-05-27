@@ -19,12 +19,11 @@
 
     line-height: 1.6;
     letter-spacing: 0.08em;
-    opacity: 0.6;
 }
 
 .stamp-single-section {
     padding: 0.25rem 0.5rem;
-    border: 2px dotted var(--color-text);
+    border: 2px dotted var(--grid-line-color);
 }
 
 .stamp-double-section {
@@ -36,7 +35,7 @@
 
 .double-section {
     padding: 0.25rem 0.5rem;
-    border: 2px dotted var(--color-text);
+    border: 2px dotted var(--grid-line-color);
     height: 50%;
 }
 
@@ -86,7 +85,7 @@
 
     transform: rotate(-4deg) translateX(-15px) translateY(-10px);
     box-shadow: 0 0 0 3px rgba(66, 184, 131, 0.15), inset 0 0 0 3px rgba(66, 184, 131, 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(1) .stamp-item:nth-child(2) {
@@ -96,7 +95,7 @@
 
     transform: rotate(3deg) translateX(-7px) translateY(5px);
     box-shadow: 0 0 0 3px rgb(184, 155, 36, 0.15), inset 0 0 0 3px rgb(195, 162, 32, 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(1) .stamp-item:nth-child(3) {
@@ -106,7 +105,7 @@
 
     transform: rotate(-2deg) translateX(4px) translateY(-2px);
     box-shadow: 0 0 0 3px rgb(14, 165, 183, 0.15), inset 0 0 0 3px rgb(32 195 165 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(1) .stamp-item:nth-child(4) {
@@ -116,7 +115,7 @@
 
     transform: rotate(-6deg) translateX(3px) translateY(2px);
     box-shadow: 0 0 0 3px rgb(214 102 24 / 0.15), inset 0 0 0 3px rgb(207 58 11 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(1) .stamp-item:nth-child(5) {
@@ -126,7 +125,7 @@
 
     transform: rotate(5deg) translateX(17px) translateY(7px);
     box-shadow: 0 0 0 3px rgb(24 170 214 / 0.15), inset 0 0 0 3px rgb(12 138 175 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 /* 2. grosse Spalte / Backend */
@@ -137,7 +136,7 @@
 
     transform: rotate(6deg) translateX(-6px) translateY(-4px);
     box-shadow: 0 0 0 3px rgb(202 101 42 / 0.15), inset 0 0 0 3px rgb(207 87 20 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(2) {
@@ -147,7 +146,7 @@
 
     transform: rotate(-2deg) translateX(2px) translateY(-6px);
     box-shadow: 0 0 0 3px rgb(150 112 204 / 0.15), inset 0 0 0 3px rgb(121 85 177 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(3) {
@@ -157,7 +156,7 @@
 
     transform: rotate(4deg) translateX(15px) translateY(-9px);
     box-shadow: 0 0 0 3px rgb(75 205 23 / 0.15), inset 0 0 0 3px rgb(30 193 83 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(4) {
@@ -167,7 +166,7 @@
 
     transform: rotate(3deg) translateX(11px) translateY(-6px);
     box-shadow: 0 0 0 3px rgb(53 74 200 / 0.15), inset 0 0 0 3px rgb(74 69 207 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(5) {
@@ -177,7 +176,7 @@
 
     transform: rotate(-2deg) translateX(9px) translateY(-3px);
     box-shadow: 0 0 0 3px rgb(74 204 92 / 0.15), inset 0 0 0 3px rgb(159 227 124 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(6) {
@@ -187,7 +186,7 @@
 
     transform: rotate(2deg) translateX(16px) translateY(6px);
     box-shadow: 0 0 0 3px rgb(61 218 150 / 0.15), inset 0 0 0 3px rgb(35 234 147 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 /* 3. Doppel Spalte / Tools */
@@ -198,7 +197,7 @@
 
     transform: rotate(13deg) translateX(1px) translateY(-8px);
     box-shadow: 0 0 0 3px rgb(74 204 92 / 0.15), inset 0 0 0 3px rgb(159 227 124 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(2) {
@@ -208,7 +207,7 @@
 
     transform: rotate(-1deg) translateX(-2px) translateY(-23px);
     box-shadow: 0 0 0 3px rgb(214 155 81 / 0.15), inset 0 0 0 3px rgb(220 149 49 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(3) {
@@ -218,7 +217,7 @@
 
     transform: rotate(-2deg) translateX(4px) translateY(-12px);
     box-shadow: 0 0 0 3px rgb(143 92 189 / 0.15), inset 0 0 0 3px rgb(157 113 198 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(4) {
@@ -228,7 +227,7 @@
 
     transform: rotate(-7deg) translateX(-6px) translateY(9px);
     box-shadow: 0 0 0 3px rgb(230 92 36 / 0.15), inset 0 0 0 3px rgb(239 85 25 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(5) {
@@ -238,7 +237,7 @@
 
     transform: rotate(6deg) translateX(6px) translateY(4px);
     box-shadow: 0 0 0 3px rgb(36 150 237 / 0.15), inset 0 0 0 3px rgb(56 147 216 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(6) {
@@ -248,7 +247,7 @@
 
     transform: rotate(-3deg) translateX(16px) translateY(-3px);
     box-shadow: 0 0 0 3px rgb(34 34 34 / 0.15), inset 0 0 0 3px rgb(34 34 34 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 /* 3. Doppel Spalte / Sprache */
@@ -260,7 +259,7 @@
 
     transform: rotate(-2deg) translateX(-13px) translateY(-14px);
     box-shadow: 0 0 0 3px rgb(110 110 110 / 0.15), inset 0 0 0 3px rgb(110 110 110 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .double-section:nth-child(2) .stamp-item:nth-child(2) {
@@ -271,7 +270,7 @@
 
     transform: rotate(1deg) translateX(0px) translateY(9px);
     box-shadow: 0 0 0 3px rgb(110 110 110 / 0.15), inset 0 0 0 3px rgb(110 110 110 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .double-section:nth-child(2) .stamp-item:nth-child(3) {
@@ -282,7 +281,7 @@
 
     transform: rotate(-2deg) translateX(4px) translateY(-2px);
     box-shadow: 0 0 0 3px rgb(110 110 110 / 0.15), inset 0 0 0 3px rgb(110 110 110 / 0.25);
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .stamp-icon {

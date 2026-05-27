@@ -12,7 +12,7 @@
     --color-paper-secondary: #efd29a;
 
     /* Text */
-    --color-text: #2B2620;
+    --color-text: rgb(43 38 32 / 0.65);
     --color-text-muted: #7A6F63;
 
     /* Tabs */
@@ -30,4 +30,7 @@
     --color-shadow: rgba(43, 38, 32, 0.16);
     --color-border-folder-dark: #af7a2e;
 
+    --grid-line-color: rgb(43 38 32 / 0.39);
+    --grid-muted-text: rgba(0, 0, 0, 0.65);
+    --grid-strong-text: rgba(0, 0, 0, 1);
 }

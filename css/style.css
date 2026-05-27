@@ -2,6 +2,7 @@
 @import "cardStyle.css";
 @import "stampStyles.css";
 @import "colors.css";
+@import "experienceGrid.css";
 
 html {
   color: #222;

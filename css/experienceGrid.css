@@ -1,0 +1,115 @@
+
+.experienceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    line-height: 1.55;
+}
+
+.workTitle {
+    grid-row: span 2 / span 2;
+    border-right: 2px dotted var(--grid-line-color);
+}
+
+.workOne {
+    grid-column: span 2 / span 2;
+}
+
+.workTwo {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-top: 2px dotted var(--grid-line-color);
+}
+
+.schoolTitle {
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+    border-right: 2px dotted var(--grid-line-color);
+}
+
+.courseTitle {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    border-right: 2px dotted var(--grid-line-color);
+}
+
+.schoolOne {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.schoolTwo {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    border-top: 2px dotted var(--grid-line-color);
+}
+
+.courseOne {
+    grid-column: span 2 / span 2;
+    grid-row-start: 5;
+}
+
+.courseTwo {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 6;
+    border-top: 2px dotted var(--grid-line-color);
+}
+
+.schoolTitle,
+.schoolOne {
+    border-top: 2px dotted var(--grid-line-color);
+}
+
+.courseTitle,
+.courseOne {
+    border-top: 2px dotted var(--grid-line-color);
+}
+
+.gridContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.gridContent .gridTitle {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    opacity: 1;
+    font-weight: 700;
+    color: #000000;
+}
+
+.gridContentTitle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.gridContentTitle .gridContentNumber {
+    font-weight: bold;
+    font-size: 2.25rem;
+    font-family: "Georgia", Serif, monospace;
+}
+
+.gridContentTitle .gridContentSubtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.gridText {
+    opacity: 0.6;
+}
