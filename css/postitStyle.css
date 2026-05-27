@@ -9,6 +9,18 @@
     /*min-height: 0;*/
 }
 
+.project-wall {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+    margin-top: 0.5rem;
+    max-width: 100%;
+
+    flex: 1;
+    min-height: 0;
+}
+
 .postit {
     position: relative;
     min-height: 250px;
@@ -64,6 +76,7 @@
     left: 50%;
     width: 50%;
     height: 12%;
+    max-height: 30px;
     background: rgba(255, 255, 255, 0.36);
     transform: translateX(-50%) rotate(-1.5deg);
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -80,6 +93,31 @@
 
 .postit:nth-child(3) {
     transform: rotate(-1.75deg);
+}
+
+.postit-project:nth-child(1) {
+    transform: rotate(1deg);
+}
+
+.postit-project:nth-child(2) {
+    transform: rotate(-2deg);
+}
+
+.postit-project:nth-child(3) {
+    transform: rotate(0.7deg);
+}
+
+.postit-project {
+    word-spacing: 0.08em;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.postit-project .postit-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .postit-label, .card-label {
@@ -224,4 +262,35 @@
 /* Kleine Handys */
 @media (max-width: 480px) {
 
+}
+
+.project-meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-link{
+    display: inline-block;
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+    width: fit-content;
+}
+
+.project-link:hover {
+    opacity: 0.7;
+}
+
+.project-text {
+    margin: 0;
+}
+
+.project-text .highlight{
+    display: inline;
+    background: rgb(255 244 2 / 0.5);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
