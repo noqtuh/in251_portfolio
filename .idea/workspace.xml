@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b4b0823-066a-4af5-b326-ba3c49068ced" name="Changes" comment="feat: added hover effect to the stamps and project postit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/myImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/myImage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/myImageSquare.png" beforeDir="false" />
+    <list default="true" id="7b4b0823-066a-4af5-b326-ba3c49068ced" name="Changes" comment="feat: added responsive styles and with that wrapped the project up.">
       <change beforePath="$PROJECT_DIR$/css/cardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cardStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/colors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/experienceGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/experienceGrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/postitStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/postitStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stampIndividual.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stampIndividual.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stampStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stampStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topSecretNoe2026.html" beforeDir="false" afterPath="$PROJECT_DIR$/topSecretNoe2026.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +184,7 @@
       <workItem from="1779780670537" duration="9380000" />
       <workItem from="1779829428138" duration="4320000" />
       <workItem from="1779876500998" duration="22619000" />
-      <workItem from="1780078394416" duration="8011000" />
+      <workItem from="1780078394416" duration="8150000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: Switched language of the CV to german.">
       <option name="closed" value="true" />
@@ -277,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779914126721</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: added responsive styles and with that wrapped the project up.">
+      <option name="closed" value="true" />
+      <created>1780086441710</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1780086441710</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +288,7 @@
     <MESSAGE value="feat: added custom favicon.ico" />
     <MESSAGE value="feat: added all the content to the CV." />
     <MESSAGE value="feat: added hover effect to the stamps and project postit" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added hover effect to the stamps and project postit" />
+    <MESSAGE value="feat: added responsive styles and with that wrapped the project up." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added responsive styles and with that wrapped the project up." />
   </component>
 </project>

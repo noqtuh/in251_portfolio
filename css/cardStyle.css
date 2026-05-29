@@ -129,11 +129,9 @@
 }
 
 .card-inner .card-content {
-    /*padding: 0.5rem 2.25rem 0 2.25rem;*/
     height: 100%;
     display: flex;
     flex-direction: column;
-
 }
 
 .card-content .card-title {
@@ -194,7 +192,6 @@
     opacity: 0.7;
 }
 
-/* Full HD / MacBook / kleinere Desktop Screens */
 @media (max-width: 1920px) {
     .card-wall {
         gap: 2rem;
@@ -258,38 +255,6 @@
 
 }
 
-/* MacBook / kleinere Laptops */
-@media (max-width: 1600px) {
-
-}
-
-/* Laptops / kleinere Screens */
-@media (max-width: 1440px) {
-
-}
-
-/* Tablets */
-@media (max-width: 1024px) {
-
-}
-
-/* Handys */
-@media (max-width: 768px) {
-
-}
-
-/* Kleine Handys */
-@media (max-width: 480px) {
-
-}
-
-/* ========================================================= */
-/* Responsive Ergänzungen
-   Basis-Styles, Hover-/Focus-Effekte, Rotationen und Paperclips
-   bleiben unverändert. Nur Layout/Grössen für kleinere Screens.
-   ========================================================= */
-
-/* Normale Desktop/Laptop-Grössen: nur etwas kompakter */
 @media (max-width: 1600px) {
     .card-wall {
         gap: 1.5rem;
@@ -329,7 +294,6 @@
     }
 }
 
-/* Kleinere Laptop-Screens */
 @media (max-width: 1440px) {
     .card-wall {
         gap: 1.25rem;
@@ -375,7 +339,6 @@
     }
 }
 
-/* Tablets: 2 Spalten bleiben, aber Karten werden voller und kompakter */
 @media (max-width: 1024px) {
     .card-wall {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -444,7 +407,6 @@
     }
 }
 
-/* Handys: Karten untereinander, damit nichts gequetscht wird */
 @media (max-width: 768px) {
     .card-wall {
         display: flex;
@@ -541,7 +503,6 @@
     }
 }
 
-/* Kleine Handys: etwas enger und Paperclips kleiner */
 @media (max-width: 480px) {
     .card-wall {
         gap: 1rem;
