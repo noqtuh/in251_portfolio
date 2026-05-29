@@ -49,15 +49,6 @@
     font-weight: 700;
 }
 
-.stamp-text {
-    max-width: 100%;
-    line-height: 1.6;
-    font-size: 1.25rem;
-    letter-spacing: 0.08em;
-    opacity: 0.6;
-    min-height: 50px;
-}
-
 .stamp-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -77,7 +68,6 @@
     justify-content: center;
 
     position: relative;
-    overflow: hidden;
 
     transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
 }
@@ -86,30 +76,45 @@
     content: attr(data-label);
 
     position: absolute;
-    inset: 0;
+    left: 50%;
+    bottom: 125%;
 
-    display: flex;
+    transform: rotate(var(--counter-rotation)) translateX(-50%) translateY(6px) scale(0.9);
+
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    background: var(--stamp-fill, currentColor);
-    color: var(--color-paper);
+    width: max-content;
+    min-width: 75px;
+    max-width: 200px;
+    padding: 0.35rem 0.6rem;
+
+    background: var(--color-paper-secondary);
+    color: var(--color-text);
 
     font-weight: 700;
     font-size: 0.75rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     text-align: center;
-    border-radius: 0.5rem;
+    white-space: normal;
+    overflow-wrap: break-word;
 
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+    border-radius: 0.25rem;
     opacity: 0;
-    transform: scale(0.5);
+    pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.stamp-item:hover::after {
+
+.stamp-item:hover::after,
+.stamp-item:focus-visible::after,
+.stamp-item:focus::after {
     opacity: 1;
-    transform: scale(1);
+    transform: rotate(var(--counter-rotation)) translateX(-50%) translateY(0px) scale(1);
 }
 
 .stamp-icon {
@@ -119,7 +124,10 @@
     display: block;
 }
 
-/* Full HD / MacBook / kleinere Desktop Screens */
+.stamp-item svg {
+    opacity: 0.75;
+}
+
 @media (max-width: 1920px) {
     .stamp-label {
         font-size: 1rem;
@@ -130,5 +138,201 @@
         font-size: 0.9rem;
         letter-spacing: 0.06em;
         line-height: 1.55;
+    }
+}
+
+@media (max-width: 1600px) {
+    .stamp-page {
+        gap: 2rem;
+    }
+
+    .stamp-double-section {
+        gap: 2rem;
+    }
+
+    .stamp-content {
+        gap: 0.6rem;
+        margin-top: 0.75rem;
+    }
+
+    .stamp-label {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .stamp-page {
+        gap: 1.5rem;
+    }
+
+    .stamp-double-section {
+        gap: 1.5rem;
+    }
+
+    .stamp-content {
+        gap: 0.5rem;
+    }
+
+    .stamp-label {
+        font-size: 0.9rem;
+        letter-spacing: 0.075em;
+    }
+
+    .stamp-text {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+
+    .stamp-item::after {
+        max-width: 170px;
+        font-size: 0.68rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .stamp-page {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 0.75rem;
+    }
+
+    .stamp-section {
+        line-height: 1.45;
+        letter-spacing: 0.06em;
+    }
+
+    .stamp-single-section,
+    .double-section {
+        padding: 0.25rem;
+    }
+
+    .stamp-double-section {
+        gap: 1rem;
+    }
+
+    .stamp-content {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.45rem;
+        margin-top: 0.6rem;
+    }
+
+    .stamp-label {
+        font-size: 0.8rem;
+        letter-spacing: 0.065em;
+    }
+
+    .stamp-text {
+        font-size: 0.72rem;
+        line-height: 1.35;
+    }
+
+    .stamp-item::after {
+        max-width: 150px;
+        min-width: 65px;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.62rem;
+        letter-spacing: 0.06em;
+        z-index: 20;
+    }
+}
+
+@media (max-width: 768px) {
+    .stamp-page {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        flex: initial;
+        min-height: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .stamp-section {
+        height: auto;
+        min-height: 0;
+        width: 100%;
+    }
+
+    .stamp-single-section,
+    .double-section {
+        padding: 0.75rem;
+    }
+
+    .stamp-double-section {
+        gap: 1.25rem;
+    }
+
+    .double-section {
+        height: auto;
+    }
+
+    .stamp-label {
+        font-size: 1rem;
+        letter-spacing: 0.075em;
+    }
+
+    .stamp-text {
+        font-size: 0.85rem;
+        line-height: 1.45;
+    }
+
+    .stamp-content {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.65rem;
+        margin-top: 0.75rem;
+    }
+
+    .stamp-item {
+        min-width: 0;
+    }
+
+    .stamp-item::after {
+        bottom: 115%;
+        max-width: min(200px, 70vw);
+        font-size: 0.7rem;
+        z-index: 50;
+    }
+}
+
+@media (max-width: 480px) {
+    .stamp-page {
+        gap: 1rem;
+    }
+
+    .stamp-single-section,
+    .double-section {
+        padding: 0.65rem;
+    }
+
+    .stamp-double-section {
+        gap: 1rem;
+    }
+
+    .stamp-content {
+        gap: 0.5rem;
+    }
+
+    .stamp-label {
+        font-size: 0.9rem;
+        letter-spacing: 0.065em;
+    }
+
+    .stamp-text {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    .stamp-item::after {
+        max-width: min(180px, 78vw);
+        min-width: 60px;
+        padding: 0.3rem 0.45rem;
+        font-size: 0.62rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .stamp-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }

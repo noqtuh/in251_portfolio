@@ -113,3 +113,197 @@
 .gridText {
     opacity: 0.6;
 }
+
+@media (max-width: 1600px) {
+    .experienceGrid {
+        font-size: 0.85rem;
+        letter-spacing: 0.055em;
+        line-height: 1.5;
+    }
+
+    .gridContent {
+        padding-left: 1.5rem;
+    }
+
+    .gridContentTitle {
+        padding-left: 1.25rem;
+    }
+
+    .gridContent .gridTitle {
+        font-size: 0.95rem;
+    }
+
+    .gridContentTitle .gridContentNumber {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .experienceGrid {
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        line-height: 1.45;
+    }
+
+    .gridContent {
+        padding-left: 1.25rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+
+    .gridContentTitle {
+        padding-left: 1rem;
+        padding-top: 0.4rem;
+    }
+
+    .gridContent .gridTitle {
+        font-size: 0.9rem;
+        letter-spacing: 0.085em;
+    }
+
+    .gridContentTitle .gridContentNumber {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .experienceGrid {
+        grid-template-columns: 0.85fr 1fr 1fr;
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+        line-height: 1.35;
+    }
+
+    .gridContent {
+        padding-left: 0.9rem;
+        padding-right: 0.4rem;
+        padding-top: 0.35rem;
+        padding-bottom: 0.35rem;
+    }
+
+    .gridContentTitle {
+        padding-left: 0.75rem;
+        padding-right: 0.35rem;
+        padding-top: 0.35rem;
+    }
+
+    .gridContent .gridTitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.07em;
+    }
+
+    .gridContentTitle .gridContentNumber {
+        font-size: 1.5rem;
+    }
+
+    .gridContentTitle .gridContentSubtitle {
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+    }
+}
+
+@media (max-width: 768px) {
+    .experienceGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        width: 100%;
+        height: auto;
+        min-height: 0;
+
+        font-size: 0.85rem;
+        letter-spacing: 0.045em;
+        line-height: 1.45;
+    }
+
+    .workTitle,
+    .schoolTitle,
+    .courseTitle,
+    .workOne,
+    .workTwo,
+    .schoolOne,
+    .schoolTwo,
+    .courseOne,
+    .courseTwo {
+        grid-column: auto;
+        grid-row: auto;
+        grid-column-start: auto;
+        grid-row-start: auto;
+
+        width: 100%;
+        min-height: auto;
+    }
+
+    .workTitle,
+    .schoolTitle,
+    .courseTitle {
+        border-right: none;
+        border-top: 2px dotted var(--grid-line-color);
+        background: rgb(0 0 0 / 0.015);
+    }
+
+    .workTitle {
+        border-top: none;
+    }
+
+    .workOne,
+    .workTwo,
+    .schoolOne,
+    .schoolTwo,
+    .courseOne,
+    .courseTwo {
+        border-top: 2px dotted var(--grid-line-color);
+    }
+
+    .gridContent,
+    .gridContentTitle {
+        padding: 0.75rem 0.85rem;
+    }
+
+    .gridContent {
+        gap: 0.35rem;
+        justify-content: flex-start;
+    }
+
+    .gridContent .gridTitle {
+        font-size: 0.95rem;
+        letter-spacing: 0.08em;
+    }
+
+    .gridContentTitle .gridContentNumber {
+        font-size: 1.85rem;
+        line-height: 1;
+    }
+
+    .gridContentTitle .gridContentSubtitle {
+        font-size: 0.85rem;
+        letter-spacing: 0.06em;
+    }
+}
+
+@media (max-width: 480px) {
+    .experienceGrid {
+        font-size: 0.78rem;
+        letter-spacing: 0.035em;
+        line-height: 1.4;
+    }
+
+    .gridContent,
+    .gridContentTitle {
+        padding: 0.65rem 0.7rem;
+    }
+
+    .gridContent .gridTitle {
+        font-size: 0.85rem;
+        letter-spacing: 0.065em;
+    }
+
+    .gridContentTitle .gridContentNumber {
+        font-size: 1.55rem;
+    }
+
+    .gridContentTitle .gridContentSubtitle {
+        font-size: 0.75rem;
+    }
+}

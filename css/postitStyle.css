@@ -16,6 +16,7 @@
     align-items: stretch;
     margin-top: 0.5rem;
     max-width: 100%;
+    max-height: 550px;
 
     flex: 1;
     min-height: 0;
@@ -63,6 +64,7 @@
     position: absolute;
     inset: 0;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: top center;
     display: block;
@@ -87,48 +89,78 @@
     transform: rotate(-2.2deg);
 }
 
+.postit:hover:nth-child(1),
+.postit:focus-visible:nth-child(1),
+.postit:focus:nth-child(1) {
+    transform: rotate(-2.45deg);
+    box-shadow:
+            8px 10px 0 rgba(0, 0, 0, 0.07),
+            0 10px 16px rgba(0, 0, 0, 0.08);
+}
+
 .postit:nth-child(2) {
     transform: rotate(1.5deg);
+}
+
+.postit:hover:nth-child(2),
+.postit:focus-visible:nth-child(2),
+.postit:focus:nth-child(2) {
+    transform: rotate(1.75deg);
+    box-shadow:
+            8px 10px 0 rgba(0, 0, 0, 0.07),
+            0 10px 16px rgba(0, 0, 0, 0.08);
 }
 
 .postit:nth-child(3) {
     transform: rotate(-1.75deg);
 }
 
+.postit:hover:nth-child(3),
+.postit:focus-visible:nth-child(3),
+.postit:focus:nth-child(3) {
+    transform: rotate(-2deg);
+    box-shadow:
+            8px 10px 0 rgba(0, 0, 0, 0.07),
+            0 10px 16px rgba(0, 0, 0, 0.08);
+}
+
 .postit-project:nth-child(1) {
     transform: rotate(1deg);
 }
 
-.postit-project:hover:nth-child(1) {
-    transform: perspective(1000px) rotateX(0.8deg) rotate(0.85deg);
-    transform-origin: top center;
+.postit-project:hover:nth-child(1),
+.postit-project:focus-visible:nth-child(1),
+.postit-project:focus:nth-child(1) {
+    transform: rotate(1.25deg);
     box-shadow:
-            7px 9px 0 rgba(0, 0, 0, 0.08),
-            0 7px 10px rgba(0, 0, 0, 0.06);
+            8px 10px 0 rgba(0, 0, 0, 0.07),
+            0 10px 16px rgba(0, 0, 0, 0.08);
 }
 
 .postit-project:nth-child(2) {
     transform: rotate(-2deg);
 }
 
-.postit-project:hover:nth-child(2) {
-    transform: perspective(1000px) rotateX(0.8deg) rotate(-1.85deg);
-    transform-origin: top center;
+.postit-project:hover:nth-child(2),
+.postit-project:focus-visible:nth-child(2),
+.postit-project:focus:nth-child(2) {
+    transform: rotate(-2.25deg);
     box-shadow:
-            7px 9px 0 rgba(0, 0, 0, 0.08),
-            0 7px 10px rgba(0, 0, 0, 0.06);
+            8px 10px 0 rgba(0, 0, 0, 0.07),
+            0 10px 16px rgba(0, 0, 0, 0.08);
 }
 
 .postit-project:nth-child(3) {
     transform: rotate(0.7deg);
 }
 
-.postit-project:hover:nth-child(3) {
-    transform: perspective(1000px) rotateX(0.8deg) rotate(0.55deg);
-    transform-origin: top center;
+.postit-project:hover:nth-child(3),
+.postit-project:focus-visible:nth-child(3),
+.postit-project:focus:nth-child(3) {
+    transform: rotate(0.95deg);
     box-shadow:
-            7px 9px 0 rgba(0, 0, 0, 0.08),
-            0 7px 10px rgba(0, 0, 0, 0.06);
+            8px 10px 0 rgba(0, 0, 0, 0.07),
+            0 10px 16px rgba(0, 0, 0, 0.08);
 }
 
 .postit-project {
@@ -156,11 +188,11 @@
     font-weight: 700;
 }
 
-.postit-content {
-    height: 80%;
+.postit-project .postit-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 0.75rem;
 }
 
 .postit-content .title{
@@ -182,12 +214,13 @@
     border: none;
 }
 
-.skill-grid button:hover {
+.skill-grid button:hover,
+.skill-grid button:focus-visible,
+.skill-grid button:focus {
     font-weight: bold;
     cursor: default;
 }
 
-/* Full HD / MacBook / kleinere Desktop Screens */
 @media (max-width: 1920px) {
     .note-wall {
         gap: 2rem;
@@ -229,7 +262,6 @@
     }
 }
 
-/* MacBook / kleinere Laptops */
 @media (max-width: 1600px) {
     .note-wall {
         gap: 2rem;
@@ -271,31 +303,12 @@
     }
 }
 
-/* Laptops / kleinere Screens */
-@media (max-width: 1440px) {
-
-}
-
-/* Tablets */
-@media (max-width: 1024px) {
-
-}
-
-/* Handys */
-@media (max-width: 768px) {
-
-}
-
-/* Kleine Handys */
-@media (max-width: 480px) {
-
-}
-
 .project-meta {
-    flex: 1;
+    flex: initial;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 0.3rem;
 }
 
 .project-link{
@@ -320,4 +333,230 @@
     background: rgb(255 244 2 / 0.5);
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+}
+
+.note-wall,
+.project-wall {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .note-wall,
+    .project-wall {
+        gap: 1.5rem;
+    }
+
+    .postit {
+        min-height: 150px;
+    }
+
+    .postit-project {
+        line-height: 1.45;
+    }
+
+    .postit-label,
+    .card-label {
+        font-size: 0.85rem;
+    }
+
+    .postit-content {
+        font-size: 0.78rem;
+    }
+
+    .skill-grid button {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .note-wall,
+    .project-wall {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .postit {
+        min-width: 0;
+        min-height: 140px;
+        padding: 0.65rem;
+    }
+
+    .postit-no-padding {
+        padding: 0;
+    }
+
+    .postit::before {
+        top: -0.8rem;
+        height: 10%;
+        max-height: 24px;
+    }
+
+    .postit-label,
+    .card-label {
+        margin-bottom: 0.35rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.065em;
+    }
+
+    .postit-content {
+        height: auto;
+        min-height: 0;
+        font-size: 0.72rem;
+        line-height: 1.35;
+    }
+
+    .postit-project {
+        line-height: 1.35;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.25rem;
+    }
+
+    .skill-grid button {
+        padding: 0.35rem 0.45rem;
+        font-size: 0.68rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .note-wall,
+    .project-wall {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        margin-top: 1rem;
+        max-width: 100%;
+    }
+
+    .project-wall {
+        flex: initial;
+        min-height: 0;
+    }
+
+    .postit,
+    .postit-project {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 1rem;
+    }
+
+    .postit-no-padding {
+        padding: 0;
+        min-height: 260px;
+    }
+
+    .postit-image-wrap,
+    .postit-image {
+        position: absolute;
+    }
+
+    .postit::before {
+        top: -0.75rem;
+        width: 42%;
+        height: 1.4rem;
+        max-height: 24px;
+    }
+
+    .postit-label,
+    .card-label {
+        margin-bottom: 0.6rem;
+        font-size: 1rem;
+        letter-spacing: 0.075em;
+    }
+
+    .postit-content,
+    .postit-project .postit-content {
+        height: auto;
+        min-height: 0;
+        flex: initial;
+        gap: 0.75rem;
+
+        font-size: 0.85rem;
+        line-height: 1.45;
+    }
+
+    .project-meta {
+        flex: initial;
+        gap: 0.25rem;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.4rem;
+    }
+
+    .skill-grid button {
+        padding: 0.45rem 0.55rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .note-wall,
+    .project-wall {
+        gap: 1rem;
+    }
+
+    .postit,
+    .postit-project {
+        padding: 0.85rem;
+    }
+
+    .postit-no-padding {
+        padding: 0;
+        min-height: 230px;
+    }
+
+    .postit::before {
+        width: 46%;
+        height: 1.2rem;
+    }
+
+    .postit-label,
+    .card-label {
+        font-size: 0.9rem;
+        letter-spacing: 0.065em;
+    }
+
+    .postit-content,
+    .postit-project .postit-content {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    .skill-grid {
+        gap: 0.35rem;
+    }
+
+    .skill-grid button {
+        padding: 0.4rem 0.45rem;
+        font-size: 0.72rem;
+    }
+}
+
+@media (min-width: 1921px) {
+    .project-wall {
+        gap: 2rem;
+    }
+
+    .postit-project {
+        line-height: 1.45;
+    }
+
+    .postit-project .postit-content {
+        min-height: 0;
+    }
+
+    .project-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .project-meta {
+        font-size: 0.85rem;
+    }
 }

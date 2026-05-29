@@ -1,246 +1,209 @@
 /* 1. grosse Spalte / Frontend */
 .stamp-section:nth-child(1) .stamp-item:nth-child(1) {
-    --stamp-fill: #42b883;
-
-    color: #42b883;
+    color: rgb(66 184 131 / 0.35);
     border-radius: 8%;
     border: 6px solid currentColor;
 
+    --counter-rotation: 4deg;
     transform: rotate(-4deg) translateX(-15px) translateY(-10px);
     box-shadow: 0 0 0 3px rgba(66, 184, 131, 0.15), inset 0 0 0 3px rgba(66, 184, 131, 0.25);
-    opacity: 0.5;
 }
 
 .stamp-section:nth-child(1) .stamp-item:nth-child(2) {
-    --stamp-fill: #b89b24;
-
-    color: #b89b24;
+    color: rgb(184 155 36 / 0.35);
     border-radius: 10%;
     border: 6px solid currentColor;
 
+    --counter-rotation: -3deg;
     transform: rotate(3deg) translateX(-7px) translateY(5px);
     box-shadow: 0 0 0 3px rgb(184, 155, 36, 0.15), inset 0 0 0 3px rgb(195, 162, 32, 0.25);
-    opacity: 0.5;
 }
 
 .stamp-section:nth-child(1) .stamp-item:nth-child(3) {
-    --stamp-fill: #0ea5b7;
-
-    color: #0ea5b7;
+    color: rgb(14 165 183 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
 
+    --counter-rotation: 2deg;
     transform: rotate(-2deg) translateX(4px) translateY(-2px);
     box-shadow: 0 0 0 3px rgb(14, 165, 183, 0.15), inset 0 0 0 3px rgb(32 195 165 / 0.25);
-    opacity: 0.5;
 }
 
 .stamp-section:nth-child(1) .stamp-item:nth-child(4) {
-    --stamp-fill: #d65a2e;
-
-    color: #d65a2e;
+    color: rgb(214 90 46 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
+    padding: 1rem 0.75rem 0.75rem;
 
+    --counter-rotation: 6deg;
     transform: rotate(-6deg) translateX(3px) translateY(2px);
     box-shadow: 0 0 0 3px rgb(214 102 24 / 0.15), inset 0 0 0 3px rgb(207 58 11 / 0.25);
-    opacity: 0.5;
 }
 
 .stamp-section:nth-child(1) .stamp-item:nth-child(5) {
-    --stamp-fill: #2f73b7;
-
-    color: #2f73b7;
+    color: rgb(47 115 183 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
+    padding: 1rem 0.75rem 0.75rem;
 
+    --counter-rotation: -5deg;
     transform: rotate(5deg) translateX(17px) translateY(7px);
     box-shadow: 0 0 0 3px rgb(24 170 214 / 0.15), inset 0 0 0 3px rgb(12 138 175 / 0.25);
-    opacity: 0.5;
 }
 
 /* 2. grosse Spalte / Backend */
 .stamp-section:nth-child(2) .stamp-item:nth-child(1) {
-    --stamp-fill: #b35f4b;
-
-    color: #b35f4b;
+    color: rgb(179 95 75 / 0.35);
     border-radius: 40%;
     border: 6px solid currentColor;
 
+    --counter-rotation: -6deg;
     transform: rotate(6deg) translateX(-6px) translateY(-4px);
     box-shadow: 0 0 0 3px rgb(202 101 42 / 0.15), inset 0 0 0 3px rgb(207 87 20 / 0.25);
-    opacity: 0.5;
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(2) {
-    --stamp-fill: #7c5fa8;
-
-    color: #7c5fa8;
+    color: rgb(124 95 168 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
 
+    --counter-rotation: 2deg;
     transform: rotate(-2deg) translateX(2px) translateY(-6px);
     box-shadow: 0 0 0 3px rgb(150 112 204 / 0.15), inset 0 0 0 3px rgb(121 85 177 / 0.25);
-    opacity: 0.5;
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(3) {
-    --stamp-fill: #6fa36f;
-
-    color: #6fa36f;
+    color: rgb(111 163 111 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
 
+    --counter-rotation: -4deg;
     transform: rotate(4deg) translateX(15px) translateY(-9px);
-    box-shadow: 0 0 0 3px rgb(75 205 23 / 0.15), inset 0 0 0 3px rgb(30 193 83 / 0.25);
-    opacity: 0.5;
+    box-shadow: 0 0 0 3px rgb(111 163 111 / 0.15), inset 0 0 0 3px rgb(111 163 111 / 0.25);
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(4) {
-    --stamp-fill: #3e46ca;
-
-    color: #3e46ca;
+    color: rgb(62 70 202 / 0.35);
     border-radius: 25%;
     border: 6px solid currentColor;
 
+    --counter-rotation: -3deg;
     transform: rotate(3deg) translateX(11px) translateY(-6px);
     box-shadow: 0 0 0 3px rgb(53 74 200 / 0.15), inset 0 0 0 3px rgb(74 69 207 / 0.25);
-    opacity: 0.5;
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(5) {
-    --stamp-fill: #6f8f78;
-
-    color: #6f8f78;
+    color: rgb(111 143 120 / 0.35);
     border-radius: 25%;
     border: 6px solid currentColor;
 
+    --counter-rotation: 2deg;
     transform: rotate(-2deg) translateX(9px) translateY(-3px);
-    box-shadow: 0 0 0 3px rgb(74 204 92 / 0.15), inset 0 0 0 3px rgb(159 227 124 / 0.25);
-    opacity: 0.5;
+    box-shadow: 0 0 0 3px rgb(111 143 120 / 0.15), inset 0 0 0 3px rgb(111 143 120 / 0.25);
 }
 
 .stamp-section:nth-child(2) .stamp-item:nth-child(6) {
-    --stamp-fill: #44D093;
-
-    color: #44D093;
+    color: rgb(68 208 147 / 0.35);
     border-radius: 25%;
     border: 6px solid currentColor;
 
+    --counter-rotation: -2deg;
     transform: rotate(2deg) translateX(16px) translateY(6px);
     box-shadow: 0 0 0 3px rgb(61 218 150 / 0.15), inset 0 0 0 3px rgb(35 234 147 / 0.25);
-    opacity: 0.5;
 }
 
 /* 3. Doppel Spalte / Tools */
 .double-section:nth-child(1) .stamp-item:nth-child(1) {
-    --stamp-fill: #6f6a62;
-
-    color: #6f6a62;
+    color: rgb(111 106 98 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
 
+    --counter-rotation: -13deg;
     transform: rotate(13deg) translateX(1px) translateY(-8px);
     box-shadow: 0 0 0 3px rgb(111 106 98 / 0.15), inset 0 0 0 3px rgb(120 118 115 / 0.25);
-    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(2) {
-    --stamp-fill: #d99a45;
-
-    color: #d99a45;
+    color: rgb(217 154 69 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
 
+    --counter-rotation: 1deg;
     transform: rotate(-1deg) translateX(-2px) translateY(-23px);
     box-shadow: 0 0 0 3px rgb(214 155 81 / 0.15), inset 0 0 0 3px rgb(220 149 49 / 0.25);
-    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(3) {
-    --stamp-fill: #8f6bb0;
-
-    color: #8f6bb0;
+    color: rgb(143 107 176 / 0.35);
     border-radius: 10%;
     border: 6px solid currentColor;
 
+    --counter-rotation: 2deg;
     transform: rotate(-2deg) translateX(4px) translateY(-12px);
     box-shadow: 0 0 0 3px rgb(143 92 189 / 0.15), inset 0 0 0 3px rgb(157 113 198 / 0.25);
-    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(4) {
-    --stamp-fill: #ef6c37;
-
-    color: #ef6c37;
+    color: rgb(239 108 55 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
 
+    --counter-rotation: 7deg;
     transform: rotate(-7deg) translateX(-6px) translateY(9px);
     box-shadow: 0 0 0 3px rgb(230 92 36 / 0.15), inset 0 0 0 3px rgb(239 85 25 / 0.25);
-    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(5) {
-    --stamp-fill: #2496ed;
-
-    color: #2496ed;
+    color: rgb(36 150 237 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
 
+    --counter-rotation: -6deg;
     transform: rotate(6deg) translateX(6px) translateY(4px);
     box-shadow: 0 0 0 3px rgb(36 150 237 / 0.15), inset 0 0 0 3px rgb(56 147 216 / 0.25);
-    opacity: 0.5;
 }
 
 .double-section:nth-child(1) .stamp-item:nth-child(6) {
-    --stamp-fill: #0e0e0e;
-
-    color: #0e0e0e;
+    color: rgb(14 14 14 / 0.35);
     border-radius: 50%;
     border: 6px solid currentColor;
+    padding: 0.75rem 0.75rem 1rem;
 
+    --counter-rotation: 3deg;
     transform: rotate(-3deg) translateX(16px) translateY(-3px);
     box-shadow: 0 0 0 3px rgb(34 34 34 / 0.15), inset 0 0 0 3px rgb(34 34 34 / 0.25);
-    opacity: 0.5;
 }
 
 /* 3. Doppel Spalte / Sprache */
 .double-section:nth-child(2) .stamp-item:nth-child(1) {
-    --stamp-fill: #ff4949;
-
-    color: #ff4949;
+    color: rgb(255 73 73 / 0.35);
     border-radius: 10%;
     border: 6px solid currentColor;
-    filter: grayscale(100%) sepia(100%) hue-rotate(340deg) saturate(300%);
 
+
+    --counter-rotation: 2deg;
     transform: rotate(-2deg) translateX(-13px) translateY(-14px);
-    box-shadow: 0 0 0 3px rgb(110 110 110 / 0.15), inset 0 0 0 3px rgb(110 110 110 / 0.25);
-    opacity: 0.5;
+    box-shadow: 0 0 0 3px rgb(255 73 73 / 0.15), inset 0 0 0 3px rgb(225 51 51 / 0.25);
 }
 
 .double-section:nth-child(2) .stamp-item:nth-child(2) {
-    --stamp-fill: #ff4949;
-
-    color: #ff4949;
+    color: rgb(255 204 0 / 0.35);
     border-radius: 10%;
     border: 6px solid currentColor;
-    filter: grayscale(100%) sepia(100%) hue-rotate(340deg) saturate(300%);
 
+
+    --counter-rotation: -1deg;
     transform: rotate(1deg) translateX(0px) translateY(9px);
-    box-shadow: 0 0 0 3px rgb(110 110 110 / 0.15), inset 0 0 0 3px rgb(110 110 110 / 0.25);
-    opacity: 0.5;
+    box-shadow: 0 0 0 3px rgb(255 204 0 / 0.15), inset 0 0 0 3px rgb(255 204 0 / 0.25);
 }
 
 .double-section:nth-child(2) .stamp-item:nth-child(3) {
-    --stamp-fill: #ff4949;
-
-    color: #ff4949;
+    color: rgb(1 33 105 / 0.35);
     border-radius: 10%;
     border: 6px solid currentColor;
-    filter: grayscale(100%) sepia(100%) hue-rotate(340deg) saturate(300%);
 
+
+    --counter-rotation: -1deg;
     transform: rotate(1deg) translateX(0px) translateY(9px);
-    box-shadow: 0 0 0 3px rgb(110 110 110 / 0.15), inset 0 0 0 3px rgb(110 110 110 / 0.25);
-    opacity: 0.5;
+    box-shadow: 0 0 0 3px rgb(9 43 119 / 0.15), inset 0 0 0 3px rgb(6 44 129 / 0.25);
 }

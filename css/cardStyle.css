@@ -59,12 +59,18 @@
     transform: rotate(-0.75deg);
 }
 
-.card:nth-child(odd):hover .card-inner {
+
+
+.card:nth-child(odd):hover .card-inner,
+.card:nth-child(odd):focus-visible .card-inner,
+.card:nth-child(odd):focus .card-inner {
     transform: translateY(-6px) rotate(-1.75deg);
     box-shadow: 10px 13px 0 rgba(0, 0, 0, 0.14);
 }
 
-.card:nth-child(even):hover .card-inner {
+.card:nth-child(even):hover .card-inner,
+.card:nth-child(even):focus .card-inner,
+.card:nth-child(even):focus .card-inner {
     transform: translateY(-6px) rotate(1.75deg);
     box-shadow: 5px 15px 0 rgba(0, 0, 0, 0.14);
 }
@@ -276,3 +282,329 @@
 @media (max-width: 480px) {
 
 }
+
+/* ========================================================= */
+/* Responsive Ergänzungen
+   Basis-Styles, Hover-/Focus-Effekte, Rotationen und Paperclips
+   bleiben unverändert. Nur Layout/Grössen für kleinere Screens.
+   ========================================================= */
+
+/* Normale Desktop/Laptop-Grössen: nur etwas kompakter */
+@media (max-width: 1600px) {
+    .card-wall {
+        gap: 1.5rem;
+        width: calc(100% + 3rem);
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+
+    .card-inner {
+        padding: 0.9rem 1.6rem;
+    }
+
+    .card-logo {
+        width: 48px;
+    }
+
+    .card-header {
+        gap: 0.85rem;
+    }
+
+    .card-content .card-title {
+        font-size: 1rem;
+    }
+
+    .card-content .card-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .card-description,
+    .card-list {
+        font-size: 0.8rem;
+    }
+
+    .paperclip {
+        width: 95px;
+        height: 155px;
+    }
+}
+
+/* Kleinere Laptop-Screens */
+@media (max-width: 1440px) {
+    .card-wall {
+        gap: 1.25rem;
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .card {
+        width: 92%;
+        max-height: 250px;
+    }
+
+    .card-inner {
+        padding: 0.8rem 1.35rem;
+    }
+
+    .card-logo {
+        width: 42px;
+    }
+
+    .card-content .card-title {
+        font-size: 0.95rem;
+    }
+
+    .card-content .card-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .card-body {
+        margin-top: 0.45rem;
+        padding-top: 0.45rem;
+    }
+
+    .card-description,
+    .card-list {
+        font-size: 0.75rem;
+    }
+
+    .paperclip {
+        width: 86px;
+        height: 140px;
+    }
+}
+
+/* Tablets: 2 Spalten bleiben, aber Karten werden voller und kompakter */
+@media (max-width: 1024px) {
+    .card-wall {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+        max-height: none;
+        height: 100%;
+        min-height: 180px;
+        padding: 0 0.35rem;
+    }
+
+    .card:nth-child(odd),
+    .card:nth-child(even) {
+        justify-self: stretch;
+    }
+
+    .card-inner {
+        padding: 0.75rem 1rem;
+    }
+
+    .card-logo {
+        width: 38px;
+    }
+
+    .card-header {
+        gap: 0.7rem;
+    }
+
+    .card-content .card-title {
+        font-size: 0.85rem;
+    }
+
+    .card-content .card-subtitle {
+        font-size: 0.68rem;
+    }
+
+    .card-description,
+    .card-list {
+        font-size: 0.68rem;
+        line-height: 1.35;
+    }
+
+    .card-list {
+        padding-left: 0.95rem;
+    }
+
+    .paperclip {
+        width: 72px;
+        height: 118px;
+    }
+
+    .card:nth-child(odd) .paperclip {
+        left: -26px;
+    }
+
+    .card:nth-child(even) .paperclip {
+        right: -26px;
+    }
+}
+
+/* Handys: Karten untereinander, damit nichts gequetscht wird */
+@media (max-width: 768px) {
+    .card-wall {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+
+        flex: initial;
+        min-height: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        height: auto;
+        max-height: none;
+        padding: 0 0.35rem;
+    }
+
+    .card-inner {
+        height: auto;
+        min-height: 170px;
+        padding: 1rem 1.25rem;
+    }
+
+    .card:nth-child(odd),
+    .card:nth-child(even) {
+        justify-self: auto;
+    }
+
+    .card-logo {
+        width: 44px;
+    }
+
+    .card-header {
+        gap: 0.85rem;
+    }
+
+    .card-content .card-title {
+        font-size: 1rem;
+    }
+
+    .card-content .card-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .card-description,
+    .card-list {
+        font-size: 0.85rem;
+        line-height: 1.45;
+    }
+
+    .card-body {
+        margin-top: 0.65rem;
+        padding-top: 0.65rem;
+    }
+
+    .paperclip {
+        width: 78px;
+        height: 128px;
+    }
+
+    .card:nth-child(odd) .paperclip {
+        left: -26px;
+    }
+
+    .card:nth-child(even) .paperclip {
+        right: -26px;
+    }
+
+    .card:nth-child(1) .paperclip {
+        top: -22px;
+        left: -28px;
+    }
+
+    .card:nth-child(2) .paperclip {
+        top: -24px;
+        right: -25px;
+    }
+
+    .card:nth-child(3) .paperclip {
+        top: -8px;
+        left: -24px;
+    }
+
+    .card:nth-child(4) .paperclip {
+        top: 6px;
+        right: -26px;
+    }
+}
+
+/* Kleine Handys: etwas enger und Paperclips kleiner */
+@media (max-width: 480px) {
+    .card-wall {
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 0 0.2rem;
+    }
+
+    .card-inner {
+        min-height: 160px;
+        padding: 0.85rem 1rem;
+    }
+
+    .card-logo {
+        width: 38px;
+    }
+
+    .card-header {
+        gap: 0.7rem;
+    }
+
+    .card-content .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-content .card-subtitle {
+        font-size: 0.72rem;
+    }
+
+    .card-description,
+    .card-list {
+        font-size: 0.76rem;
+        line-height: 1.4;
+    }
+
+    .card-list {
+        padding-left: 0.9rem;
+    }
+
+    .paperclip {
+        width: 62px;
+        height: 102px;
+    }
+
+    .card:nth-child(1) .paperclip {
+        top: -18px;
+        left: -22px;
+    }
+
+    .card:nth-child(2) .paperclip {
+        top: -20px;
+        right: -20px;
+    }
+
+    .card:nth-child(3) .paperclip {
+        top: -6px;
+        left: -20px;
+    }
+
+    .card:nth-child(4) .paperclip {
+        top: 5px;
+        right: -20px;
+    }
+}
+

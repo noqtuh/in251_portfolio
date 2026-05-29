@@ -4,6 +4,8 @@
 Dieses Projekt wurde im Rahmen der Praxis-Arbeit CV für das Modul IN251 Webprogramming Basics erstellt. Zu Beginn habe ich mir überlegt, wie ich den Auftrag am besten umsetzen könnte. Da mir HTML, CSS und JavaScript bereits bekannt waren, wollte ich eine kreative Lösung entwickeln.
 Schlussendlich habe ich mich für einen digitalen "Ordner" entschieden, in dem sich verschiedene Dokumente über mich befinden. Diese Dokumente enthalten Informationen zu meiner Person, meinen Erfahrungen, Skills, ein paar Projekte und Kontaktinformationen.
 
+Ausserdem habe ich mir ein paar coole spielerein und eastereggs ausgedacht um das CV interessanter zu gestalten, unter anderem eine unlock animation beim öffnen des Ordners aber auch interaktive Elemente über das ganze CV verteilt.
+
 ## Funktionen
 - Digitaler Ordner
 - Dokumente mit Informationen über mich
